@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Возраст</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <h1>Приветствую вас, дорогие друзья</h1>
+    <p1>Хочу познакомить вас со своим первым проектом html(не учитывая попытки писанины на блокноте в 10 классе)<br></p1>
+
+    <p2><b>Введите Ваш год рождения:</b><br>
+        <input type="text" class="i-1" size="40">
+        <button>PUSH</button><br>
+        В этом году Вам исполняется:
+        <div class="out">__</div>
+    </p2>
+
+    <pre>
+        <script>
+            document.querySelector('button').onclick = out;
+
+            function out(){
+                let age = document.querySelector('.i-1').value;
+                document.querySelector('.out').innerHTML = 2022-age;
+            }
+
+        </script>
+    </pre>
+
+
+    <div class="okno">
+        Спасибо за Ваш ответ!
+    </div>
+
+</body>
+</html>
